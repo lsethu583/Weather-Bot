@@ -1,0 +1,122 @@
+/* General container styles */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #a3c1e0, #f1f6f9); /* Light blue gradient */
+    height: 100vh; /* Ensure full height */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center; /* Center text for better appearance */
+  }
+  
+  /* Title styling */
+  .weather-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Input and button container */
+  .input-container {
+    display: flex;
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /* Input field styling */
+  .weather-input {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .weather-input:focus {
+    border-color: #3b82f6;
+  }
+  
+  /* Button styling */
+  .weather-button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .weather-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Weather information styling */
+  .weather-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .weather-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .weather-info p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .weather-container {
+      padding: 10px; /* Less padding on smaller screens */
+    }
+  
+    .weather-container h2 {
+      font-size: 2rem; /* Smaller title font */
+    }
+  
+    .weather-input {
+      width: 80%; /* Make input field width responsive */
+    }
+  
+    .weather-button {
+      width: 80%; /* Make button width responsive */
+    }
+  
+    .weather-info {
+      width: 90%; /* Responsive width for weather info */
+    }
+  
+    .weather-info h3 {
+      font-size: 1.5rem; /* Smaller subtitle font */
+    }
+  
+    .weather-info p {
+      font-size: 1rem; /* Smaller paragraph font */
+    }
+  }
+  
