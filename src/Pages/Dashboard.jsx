@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import UserTable from '../Components/Table'
 import WeatherApp from '../Components/WeatherInput'
-// import Chart from '../Components/Chart'
+
 
 const Dashboard = () => {
   return (
@@ -10,7 +10,6 @@ const Dashboard = () => {
     <Navbar />
     <UserTable />
     <WeatherApp />
-    {/* <Chart /> */}
     </>
   )
 }

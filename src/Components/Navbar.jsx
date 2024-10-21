@@ -5,17 +5,17 @@ import '../Style/Navbar.css';
 
 const Navbar = () => {
   const handleDownloadPDF = () => {
-    // Capture the entire page
+   
     html2canvas(document.body, { scale: 2 }).then((canvas) => {
       const imgData = canvas.toDataURL('image/png');
-      const pdf = new jsPDF('p', 'mm', 'a4'); // Create a PDF document
+      const pdf = new jsPDF('p', 'mm', 'a4'); 
 
-      // Calculate image width and height to fit into A4 size PDF
-      const imgWidth = 210; // A4 page width in mm
-      const imgHeight = (canvas.height * imgWidth) / canvas.width; // Maintain aspect ratio
+     
+      const imgWidth = 210; 
+      const imgHeight = (canvas.height * imgWidth) / canvas.width; 
 
       pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-      pdf.save('entire-page.pdf'); // Save the PDF
+      pdf.save('entire-page.pdf'); 
     });
   };
 

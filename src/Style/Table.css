@@ -1,97 +1,95 @@
-/* src/Style/Table.css */
 
-/* General Table Styling */
 .table-container {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items horizontally */
-    margin: 20px; /* Add margin around the container */
-    height: auto; /* Allow dynamic height */
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px; 
+    height: auto;
   }
   
   .search-input {
-    width: 30%; /* Set width for better alignment with the table */
-    padding: 8px; /* Padding for better appearance */
-    margin-bottom: 10px; /* Space below the input */
-    border: 1px solid #271f9b; /* Border styling */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 1em; /* Consistent font size */
+    width: 30%; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: 1px solid #271f9b; 
+    border-radius: 4px; 
+    font-size: 1em;
   }
   
   table {
-    width: 70%; /* Table width */
+    width: 70%;
     border-collapse: separate;
-    border-spacing: 9px 9px; /* Adds space between rows */
-    margin: 20px 0; /* Space above and below the table */
-    font-size: 1.1em; /* Font size for the table */
+    border-spacing: 9px 9px; 
+    margin: 20px 0; 
+    font-size: 1.1em; 
     text-align: left;
-    background-color: #f0f0f0; /* Light grey background for the table */
-    border: 1px solid #ccc; /* Border around the table */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   }
   
   thead tr {
-    background-color: #6a81cc; /* Darker grey for the table header */
+    background-color: #6a81cc;
     color: #ffffff;
     text-align: left;
     font-weight: bold;
   }
   
   th, td {
-    padding: 12px 15px; /* Cell padding */
+    padding: 12px 15px; 
   }
   
   td {
-    background-color: #ffffff; /* White background for table rows */
-    border: 1px solid #e0e0e0; /* Partition between each cell */
+    background-color: #ffffff; 
+    border: 1px solid #e0e0e0; 
   }
   
   tbody tr {
-    background-color: #f7f7f7; /* Light grey background for body rows */
+    background-color: #f7f7f7; 
   }
   
   tbody tr:nth-of-type(even) {
-    background-color: #eaeaea; /* Alternate light grey for even rows */
+    background-color: #eaeaea; 
   }
   
   tbody tr:hover {
-    background-color: #dcdcdc; /* Slightly darker grey on hover */
+    background-color: #dcdcdc; 
     cursor: pointer;
   }
   
-  /* Bottom border for the last row */
+
   tbody tr:last-of-type td {
     border-bottom: 2px solid #b0b0b0;
   }
   
-  /* Responsive Table for Smaller Screens */
+ 
   @media (max-width: 768px) {
     table, thead, tbody, th, td, tr {
-      display: block; /* Change display to block for mobile */
+      display: block; 
     }
   
     thead {
-      display: none; /* Hide header on mobile */
+      display: none; 
     }
   
     tr {
-      margin-bottom: 15px; /* Margin between rows */
+      margin-bottom: 15px; 
     }
   
     td {
-      text-align: right; /* Align text to right for mobile */
-      padding-left: 50%; /* Space for label */
-      position: relative; /* Positioning for labels */
+      text-align: right; 
+      padding-left: 50%; 
+      position: relative; 
     }
   
     td::before {
-      content: attr(data-label); /* Use attribute as label */
+      content: attr(data-label); 
       position: absolute;
-      left: 0; /* Position label on left */
-      width: 50%; /* Width of label */
-      padding-left: 15px; /* Padding for label */
-      font-weight: bold; /* Bold for labels */
-      text-align: left; /* Left align label */
+      left: 0; 
+      width: 50%; 
+      padding-left: 15px; 
+      font-weight: bold; 
+      text-align: left; 
     }
   }
   

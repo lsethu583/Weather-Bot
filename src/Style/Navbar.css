@@ -1,11 +1,11 @@
-/* General Navbar Styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #1d5aca, #3f51b5); /* Gradient effect */
+    background: linear-gradient(135deg, #1d5aca, #3f51b5);
     padding: 0.5rem 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-logo h2 {
@@ -49,7 +49,7 @@
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Responsive for small screens */
+
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
@@ -76,18 +76,18 @@
 }
 
 .download-btn {
-    padding: 10px 20px; /* Adjust padding for a better look */
-    font-size: 16px; /* Font size for button */
-    color: white; /* Text color */
-    background: linear-gradient(135deg, #3f51b5, #5c6bc0); /* Gradient for button */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Change cursor on hover */
-    transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition */
-    margin-top: 20px; /* Space above button */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white; 
+    background: linear-gradient(135deg, #3f51b5, #5c6bc0); 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 20px; 
 }
 
 .download-btn:hover {
-    background: linear-gradient(135deg, #303f9f, #3949ab); /* Darker gradient on hover */
-    transform: scale(1.05); /* Slight scaling effect on hover */
+    background: linear-gradient(135deg, #303f9f, #3949ab); 
+    transform: scale(1.05);
 }

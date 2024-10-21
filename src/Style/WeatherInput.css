@@ -1,18 +1,18 @@
-/* General container styles */
+
 .weather-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #a3c1e0, #f1f6f9); /* Light blue gradient */
-    height: 100vh; /* Ensure full height */
+    background: linear-gradient(to bottom, #a3c1e0, #f1f6f9); 
+    height: 100vh; 
     font-family: 'Arial', sans-serif;
     padding: 20px;
-    text-align: center; /* Center text for better appearance */
+    text-align: center; 
   }
   
-  /* Title styling */
+  
   .weather-container h2 {
     font-size: 2.5rem;
     color: #333;
@@ -20,16 +20,16 @@
     font-weight: bold;
   }
   
-  /* Input and button container */
+  
   .input-container {
     display: flex;
-    flex-direction: column; /* Stack input and button vertically */
+    flex-direction: column; 
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
   }
   
-  /* Input field styling */
+  
   .weather-input {
     padding: 10px;
     font-size: 1.1rem;
@@ -44,7 +44,7 @@
     border-color: #3b82f6;
   }
   
-  /* Button styling */
+ 
   .weather-button {
     padding: 10px 20px;
     font-size: 1.1rem;
@@ -60,14 +60,13 @@
     background-color: #2563eb;
   }
   
-  /* Error message */
   .error-message {
     color: #e74c3c;
     font-weight: bold;
     margin-top: 10px;
   }
   
-  /* Weather information styling */
+ 
   .weather-info {
     background-color: #fff;
     padding: 20px;
@@ -89,34 +88,33 @@
     margin: 5px 0;
   }
   
-  /* Media queries for responsiveness */
+
   @media (max-width: 768px) {
     .weather-container {
-      padding: 10px; /* Less padding on smaller screens */
+      padding: 10px;
     }
   
     .weather-container h2 {
-      font-size: 2rem; /* Smaller title font */
+      font-size: 2rem;
     }
   
     .weather-input {
-      width: 80%; /* Make input field width responsive */
+      width: 80%
     }
   
     .weather-button {
-      width: 80%; /* Make button width responsive */
+      width: 80%
     }
   
     .weather-info {
-      width: 90%; /* Responsive width for weather info */
+      width: 90%;
     }
   
     .weather-info h3 {
-      font-size: 1.5rem; /* Smaller subtitle font */
+      font-size: 1.5rem;
     }
-  
     .weather-info p {
-      font-size: 1rem; /* Smaller paragraph font */
+      font-size: 1rem;
     }
   }
   

@@ -45,26 +45,26 @@ const UserTable = () => {
         onChange={handleSearch}
         className="search-input"
       />
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Phone</th>
-          </tr>
-        </thead>
-        <tbody>
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Name</Th>
+            <Th>Username</Th>
+            <Th>Email</Th>
+            <Th>Phone</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
           {filteredUsers.map(user => (
-            <tr key={user.id}>
-              <td>{user.name}</td>
-              <td>{user.username}</td>
-              <td>{user.email}</td>
-              <td>{user.phone}</td>
-            </tr>
+            <Tr key={user.id}>
+              <Td>{user.name}</Td>
+              <Td>{user.username}</Td>
+              <Td>{user.email}</Td>
+              <Td>{user.phone}</Td>
+            </Tr>
           ))}
-        </tbody>
-      </table>
+        </Tbody>
+      </Table>
     </div>
   );
 };
